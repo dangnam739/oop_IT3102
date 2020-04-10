@@ -1,7 +1,7 @@
 public class DateUtils {
 
     public static int CompareTwoDates(MyDate date1, MyDate date2) {
-        if(date1.getYear() > date2.getYear())
+        if (date1.getYear() > date2.getYear())
             return 1;
         else if (date1.getYear() < date2.getYear())
             return -1;
@@ -11,11 +11,12 @@ public class DateUtils {
             else if (date1.getMonth() < date2.getMonth())
                 return -1;
             else if (date1.getDate() > date2.getDate())
-                 return 1;
+                return 1;
             else if (date1.getDate() < date2.getDate())
-                 return -1;
+                return -1;
             else
                 return 0;
+        }
     }
 
     public static void swap(MyDate date1, MyDate date2){

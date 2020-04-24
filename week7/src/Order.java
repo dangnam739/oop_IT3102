@@ -33,5 +33,16 @@ public class Order {
 		super();
 	}
 
+	public void showInformation() {
+		int i = 1;
+		for (Media media : itemsOrdered) {
+			System.out.println("ID: " + i);
+			System.out.println("Title: " + media.getTitle());
+			System.out.println("Category: " + media.getCategory());
+			System.out.println("Cost: " + media.getCost());
+			i = i + 1;
+		}
+	}
 
 }
+

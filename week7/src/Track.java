@@ -1,4 +1,4 @@
-public class Track implements Playable{
+public class Track implements Playable, Comparable{
     private String title;
     private int length;
 
@@ -22,5 +22,10 @@ public class Track implements Playable{
     public void play() {
         System.out.println("Playing Track: " + this.getTitle());
         System.out.println("Track Length: " + this.getLength());
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }

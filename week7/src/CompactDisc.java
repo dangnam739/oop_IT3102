@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class CompactDisc extends Disc implements Playable{
+public class CompactDisc extends Disc implements Playable, Comparable{
     private String artist;
     private int length;
     private ArrayList<Track> tracks = new ArrayList<Track>();
@@ -41,6 +41,11 @@ public class CompactDisc extends Disc implements Playable{
     @Override
     public void play() {
 
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
 

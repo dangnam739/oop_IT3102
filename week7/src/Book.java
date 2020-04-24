@@ -1,13 +1,19 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book extends Media {
+public class Book extends Media implements Comparable {
 
     private List<String> authors = new ArrayList <String>();
 
     public List<String> getAuthors() {
         return authors;
     }
+
+    public Book(String title, String category, float cost) {
+        super(title, category, cost);
+    }
+
+    public Book(){}
 
     public void setAuthors(List<String> authors) {
         this.authors = authors;
@@ -25,4 +31,8 @@ public class Book extends Media {
         }
     }
 
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }
